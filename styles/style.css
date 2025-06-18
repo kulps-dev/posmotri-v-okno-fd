@@ -9,6 +9,10 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end; 
+  padding: 133px 30px; 
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -51,13 +55,6 @@ ol {
 }
 
 /* Дополнение к существующему стилю */
-
-.page {
-  display: flex;
-  justify-content: center; 
-  align-items: flex-end; 
-  padding: 133px 30px; 
-}
 
 .content {
   display: grid;
@@ -104,6 +101,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card {
@@ -256,6 +254,7 @@ ol {
 
 /*Стили для кнопки */
 .button {
+  appearance: none;
   min-height: 34px;
   font-size: 18px;
   font-family: "Fira Sans Condensed", 'Arial', sans-serif;

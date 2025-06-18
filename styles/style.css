@@ -9,10 +9,6 @@ html {
 }
 
 .page {
-  display: flex;
-  justify-content: center; 
-  align-items: flex-end; 
-  padding: 133px 30px; 
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -20,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  align-content: center;
 }
 
 h1,
@@ -57,6 +54,7 @@ ol {
 /* Дополнение к существующему стилю */
 
 .content {
+  padding: 133px 30px;
   display: grid;
   grid-template-areas: "result content__details";
   place-items: center;
@@ -72,10 +70,11 @@ ol {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 30px;
+  padding-top: 5px;
 }
 
 .content__list-container {
@@ -85,6 +84,7 @@ ol {
 }
 
 .content__details {
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -132,7 +132,7 @@ ol {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 70.5px;
+  line-height: 94%;
   color: #ffffff;
   padding-bottom: 22px;
 }
@@ -148,7 +148,7 @@ ol {
   white-space: nowrap;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 100%;
   font-family: 'Oswald', 'Arial', sans-serif;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -272,6 +272,7 @@ ol {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 .button:focus {
@@ -325,9 +326,4 @@ ol {
 
 .content__card-link:hover .content__video-card-title {
   text-decoration: underline;
-}
-
-.content__list-item {
-  padding-left: 3px;
-  padding-right: 3px;
 }
